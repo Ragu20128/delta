@@ -7,9 +7,9 @@ Feature: Shoping a Hotel
   Scenario Outline: The user Shoping a Hotel
     Given The User is in Delta homepage
     And The user navigates to shop a hotel page
-    When The user enters the values to the fields "<location>", "<Check_In>", "<Check_Out>", "<Rooms>" and "<Adult>"
+    When The user enters the values to the fields "<Name>", "<ID>", "<P>", "<Rooms>" and "<Adult>"
     Then The user clicks the book a hotel and earn miles
 
     Examples: 
-      | location | Check_In   | Check_Out  | Rooms | Adult |
-      | Delhi    | 02/21/2019 | 02/22/2019 | 1     | 1     |
+      | Name | ID | PhNum |
+      |    1 |  1 |     1 |

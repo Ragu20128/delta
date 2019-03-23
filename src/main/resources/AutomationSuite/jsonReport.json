@@ -12,7 +12,7 @@
         "before": [
           {
             "result": {
-              "duration": 4050368926,
+              "duration": 4267141948,
               "status": "passed"
             },
             "match": {
@@ -21,13 +21,13 @@
           }
         ],
         "line": 6,
-        "name": "To verify  the mobile section navigation to play store",
+        "name": "To test sky mile cruise url",
         "description": "",
-        "id": "to-test-the-mobile-sectoin;to-verify--the-mobile-section-navigation-to-play-store",
+        "id": "to-test-sky-mile-cruise-url;to-test-sky-mile-cruise-url",
         "after": [
           {
             "result": {
-              "duration": 2092481668,
+              "duration": 2180210921,
               "status": "passed"
             },
             "match": {
@@ -40,7 +40,7 @@
         "steps": [
           {
             "result": {
-              "duration": 8083291401,
+              "duration": 7502184110,
               "status": "passed"
             },
             "line": 7,
@@ -52,66 +52,64 @@
           },
           {
             "result": {
-              "duration": 10740981369,
+              "duration": 26224522891,
               "status": "passed"
             },
             "line": 8,
-            "name": "The user navigates to mobile section",
+            "name": "The user clicks the sky mile cruises link",
             "match": {
-              "location": "HomePageSteps.the_user_navigates_to_mobile_section()"
+              "location": "HomePageSteps.the_user_clicks_the_sky_mile_cruises_link()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 286613762,
+              "duration": 29646981,
               "status": "passed"
             },
             "line": 9,
-            "name": "The user clicks the play store icon",
+            "name": "The user should see the new page with the url \"https://www.skymilescruises.com\"",
             "match": {
-              "location": "MobileSteps.the_user_clicks_the_play_store_icon()"
+              "arguments": [
+                {
+                  "val": "https://www.skymilescruises.com",
+                  "offset": 47
+                }
+              ],
+              "location": "CommonSteps.the_user_should_see_the_new_page_with_the_url(String)"
             },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 2788097400,
-              "status": "passed"
-            },
-            "line": 10,
-            "name": "The user should see the play store page",
-            "match": {
-              "location": "CommonSteps.the_user_should_see_the_play_store_page(DataTable)"
-            },
-            "rows": [
-              {
-                "cells": [
-                  "Fly Delta - Apps on Google Play"
-                ],
-                "line": 11
-              }
-            ],
             "keyword": "Then "
           }
         ],
         "tags": [
           {
             "line": 5,
-            "name": "@tag1"
+            "name": "@more"
+          },
+          {
+            "line": 5,
+            "name": "@cruise"
           }
         ]
       }
     ],
-    "name": "To test the mobile sectoin",
+    "name": "To test sky mile cruise url",
     "description": "",
-    "id": "to-test-the-mobile-sectoin",
+    "id": "to-test-sky-mile-cruise-url",
     "keyword": "Feature",
-    "uri": "src/test/resources/feature/Mobile/Mobile.feature",
+    "uri": "src/test/resources/feature/moreMenu/BookCruiser.feature",
     "tags": [
       {
         "line": 2,
-        "name": "@tag"
+        "name": "@more"
+      },
+      {
+        "line": 2,
+        "name": "@regression"
+      },
+      {
+        "line": 2,
+        "name": "@cruise"
       }
     ]
   }

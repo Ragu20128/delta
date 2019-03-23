@@ -97,6 +97,13 @@ public class HomePage {
 	@FindBy(xpath = "//a[text()='Mobile' and @target='_self']")
 	private WebElement lnk_mobile;
 
+	@FindBy(xpath = "//a[text()='SkyMiles Cruises']")
+	private WebElement lnk_skyMilesCruisers;
+
+	public WebElement getLnk_skyMilesCruisers() {
+		return lnk_skyMilesCruisers;
+	}
+
 	public WebElement getTxt_SearchInputName() {
 		return txt_SearchInputName;
 	}

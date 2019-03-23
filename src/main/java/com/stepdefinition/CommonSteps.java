@@ -18,4 +18,9 @@ public class CommonSteps extends FunctionalLibrary {
 		waitForTitle(expectedTitle.get(0));
 		Assert.assertEquals(expectedTitle.get(0), driver.getTitle());
 	}
+
+	@Then("^The user should see the new page with the url \"([^\"]*)\"$")
+	public void the_user_should_see_the_new_page_with_the_url(String expcetedurl) throws Throwable {
+	Assert.assertTrue(driver.getCurrentUrl().contains(expcetedurl));
+	}
 }

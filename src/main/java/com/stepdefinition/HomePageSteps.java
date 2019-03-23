@@ -215,11 +215,19 @@ public class HomePageSteps extends FunctionalLibrary {
 		click(home.getMenu_commentComplaint());
 
 	}
+
 	@When("^The user navigates to mobile section$")
 	public void the_user_navigates_to_mobile_section() throws Throwable {
 		HomePage home = new HomePage();
 		click(home.getMenu_More());
 		click(home.getLnk_mobile());
+	}
+
+	@When("^The user clicks the sky mile cruises link$")
+	public void the_user_clicks_the_sky_mile_cruises_link() throws Throwable {
+		HomePage home = new HomePage();
+		click(home.getMenu_More());
+		click(home.getLnk_skyMilesCruisers());
 	}
 
 }
