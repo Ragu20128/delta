@@ -180,6 +180,9 @@ public class FunctionalLibrary {
 		} catch (Exception e) {
 			Reporter.addStepLogInfo("failed while switching to frame");
 		}
+		finally {
+			System.out.println("HI");
+		}
 	}
 
 	public static void switchToDefaultcontent() {

@@ -221,6 +221,7 @@ public class HomePageSteps extends FunctionalLibrary {
 		HomePage home = new HomePage();
 		click(home.getMenu_More());
 		click(home.getLnk_mobile());
+
 	}
 
 	@When("^The user clicks the sky mile cruises link$")
